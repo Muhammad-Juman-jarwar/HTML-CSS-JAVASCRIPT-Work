@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script</title>
+</head>
+<style>
+    #btn {
+        margin-top: 20px;
+        padding: 10px 20px;
+        margin-left: 170px;
+        /* color: white;
+    background-color: red;
+    border: red;  */
+        border-radius: 1.5rem;
+    }
+
+    #table1 {
+        text-align: center;
+        margin-left: 69px;
+        /* margin-top: -40px; */
+    }
+
+    #table2 {
+        margin-top: -505px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    #table2 td input {
+        padding: 10px;
+    }
+
+    #table1 td input {
+        padding: 10px;
+    }
+
+    #h1 {
+        position: absolute;
+        margin-left: 600px;
+        margin-top: -50px;
+    }
+
+    #h2 {
+        margin-left: 70px;
+    }
+</style>
+
+<body>
+    <!-- <center> -->
+    <h1 id="h2">Fill In The Information</h1>
+    <!-- <center> -->
+    <h1 id="h1">Result Sheet</h1>
+    <!-- </center> -->
+    <table id="table1" border="1">
+    <form>
+        <tr>
+            <td>Name</td>
+            <td><input  type="text" name="" id="name" required></td>
+        </tr>
+        <tr>
+            <td>Father Name</td>
+            <td><input required type="text" name="" id="fname"></td>
+        </tr>
+
+        <tr>
+            <td>English</td>
+            <td><input required value="12" type="number" name="" id="eng"></td>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td><input required value="12" type="number" name="" id="maths"></td>
+        </tr>
+        <tr>
+            <td>Computer Science</td>
+            <td><input required value="12" type="number" name="" id="cs"></td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td><input required value="12" type="number" name="" id="phy"></td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td><input required value="12" type="number" name="" id="chem"></td>
+        </tr>
+        <tr>
+            <td>Urdu</td>
+            <td><input required value="12" type="number" name="" id="urdu"></td>
+        </tr>
+        <tr>
+            <td>Sindhi</td>
+            <td><input required value="12" type="number" name="" id="sin"></td>
+        </tr>
+        <tr>
+            <td>Islamiat</td>
+            <td><input required value="12" type="number" name="" id="isl"></td>
+        </tr>
+    
+     </form>
+
+    </table>
+    <button onclick="col()" id="btn">Submit</button>
+    <!-- </center> -->
+    <!-- <center> -->
+    <!-- </center> -->
+    <!-- <h3 id="h3">Result Sheet</h3> -->
+    <center>
+        <table id="table2" border="1">
+            <tr>
+                <td>Name</td>
+                <td><input readonly type="text" name="" id="name1"></td>
+            </tr>
+            <tr>
+                <td>Father Name</td>
+                <td><input readonly type="text" name="" id="fname1"></td>
+            </tr>
+            <td>Total</td>
+            <td><input readonly type="number" name="" id="total"></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><input readonly type="text" name="" id="percent"></td>
+            </tr>
+            <tr>
+                <td>Average</td>
+                <td><input readonly type="text" name="" id="avg"></td>
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td><input readonly type="text" name="" id="grade"></td>
+            </tr>
+            <tr>
+                <td>Remarks</td>
+                <td><input readonly type="text" name="" id="remarks"></td>
+            </tr>
+        </table>
+
+    </center>
+
+    <script>
+        function col() {
+            var a = document.querySelector('#eng').value;
+            var b = document.querySelector('#maths').value;
+            var c = document.querySelector('#cs').value;
+            var d = document.querySelector('#phy').value;
+            var e = document.querySelector('#chem').value;
+            var f = document.querySelector('#urdu').value;
+            var g = document.querySelector('#sin').value;
+            var h = document.querySelector('#isl').value;
+            var name2 = document.querySelector('#name').value;
+            var fname2 = document.querySelector('#fname').value;
+
+
+
+            if (a > 100 || b > 100 || c > 100 || d > 100 || e > 100 || f > 100 || g > 100 || h > 100) {
+                alert('Please Enter the correct value');
+            } else if (a < 0 || b < 0 || c < 0 || d < 0 || e < 0 || f < 0 || g < 0 || h < 0) {
+                alert('Please Enter the correct value');
+            } else {
+
+            }
+
+            var x = parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d) + parseInt(e) + parseInt(f) + parseInt(g) + parseInt(h);
+            var i = document.querySelector('#total').value = x;
+
+            var y = document.querySelector('#percent').value = x * 100 / 800 + "%";
+
+            var k = document.querySelector('#avg').value = x / 8;
+
+            document.querySelector('#grade').value = "A-1";
+            document.querySelector('#remarks').value = "Excellent Work";
+            if (y >= 90 + "%") {
+            } else if (y >= 80 + "%") {
+                document.querySelector('#grade').value = "A";
+                document.querySelector('#remarks').value = "Very Good";
+                document
+            } else if (y >= 70 + "%") {
+                document.querySelector('#grade').value = "B";
+                document.querySelector('#remarks').value = "Good";
+            } else if (y >= 60 + "%") {
+                document.querySelector('#grade').value = "C";
+                document.querySelector('#remarks').value = "Fair";
+            } else if (y >= 50 + "%") {
+                document.querySelector('#grade').value = "D";
+                document.querySelector('#remarks').value = "Need More Hard work";
+            } else if (y >= 40 + "%") {
+                document.querySelector('#grade').value = "E";
+                document.querySelector('#remarks').value = "Just Qualified";
+            } else {
+                document.querySelector('#grade').value = "Fail";
+                document.querySelector('#remarks').value = "Disqualified";
+            }
+
+            document.querySelector('#name1').value = name2;
+            document.querySelector('#fname1').value = fname2;
+
+        }
+    </script>
+
+</body>
+
+</html>

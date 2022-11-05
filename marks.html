@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks of Subjects</title>
+</head>
+<body>
+    <!-- <table></table> -->
+
+
+
+    <script>
+        var a = prompt("Please Enter Your Full Name","Muhammad Juman");
+        var b = prompt("Please Enter Your Father Name", "Abdul Wahid");
+        var c = prompt("Please Enter Your Roll Number", "123456");
+        var d = prompt("Please Enter Your English Marks", "14");
+        var e = prompt("Please Enter Your Mathematics Marks","15");
+        var f = prompt("Please Enter Your Physics Marks", "56");
+        var g = prompt("Please Enter Your Chemistry Marks","78");
+
+        var x = parseInt(d) + parseInt(e) + parseInt(f) + parseInt(g);  
+        var y = x*100/400;
+
+        document.write("Name = " + a +"<br/>");
+        document.write("Father Name = " + b +"<br/>");
+        document.write("Roll Number = " + c +"<br/>");
+        document.write("Total Marks = 400 " +"<br/>");
+        document.write("Obtained Marks = "+ x +"<br/>");
+        document.write("Percentage = "+ y +"%" +"<br/>");
+
+        if (y>=90){
+            document.write("Your Grade is : A-1 <br/>");
+        }
+
+        else if (y>=80){
+            document.write("Your Grade is : A <br/>");
+        }
+
+        else if (y>=70){
+            document.write("Your Grade is : B <br/>");
+        }
+
+        else if (y>=60){
+            document.write("Your Grade is : C <br/>");
+        }
+
+        else if (y>=50){
+            document.write("Your Grade is : D <br/>");
+        }
+
+        else if (y>=40){
+            document.write("Your Grade is : E <br/>");
+        }
+
+        else {
+            document.write("Sorry You are fail !! <br/>");
+        }
+
+// remarks if statement
+
+        if (y>=90){
+            document.write("Excellent");
+        }
+
+        else if (y>=80){
+            document.write("Very Good");
+        }
+
+        else if (y>=70){
+            document.write("Good");
+        }
+
+        else if (y>=60){
+            document.write("Fair");
+        }
+
+        else if (y>=50){
+            document.write("Poor");
+        }
+
+        else if (y>=40){
+            document.write("Very Poor");
+        }
+
+        else {
+            document.write("Disqualified");
+        }
+
+    
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

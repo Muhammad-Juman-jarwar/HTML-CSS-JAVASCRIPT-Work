@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first java project</title>
+    <style>
+        .red{ 
+            color: rgb(255, 0, 0);
+    
+        }
+        .blue{
+            color: rgb(0, 4, 255);
+        } 
+    </style>
+</head>
+<body>
+    <button>submit</button>
+    <div id="text" class="blue">java script</div>
+    <input type="text">
+</body>
+
+<script>
+    var button = document.querySelector("button");
+// var text = document.querySelector("#text");
+
+button.addEventListener("click", function() {
+if( text.getAttribute("class") === "blue" ){
+     text.setAttribute( "class", "red");
+} else{
+    text.setAttribute("class", "blue");
+}
+
+}); 
+var input = document.querySelector("input");
+input.addEventListener("keyup" , function(event){
+    console.log(event.target.value)
+}
+)
+// var input = document.querySelector("input");
+// input.addEventListener("keypress" , function(event){
+//     console.log(event.target.value)
+// }
+// )
+</script>
+</html>

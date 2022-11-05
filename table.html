@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    * {
+        text-align: left;
+        margin: 3px;
+        padding: 5px;
+        ;
+    }
+
+    table {
+        position: absolute;
+        margin-left: 400px;
+        margin-top: 20px;
+    }
+
+    input {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <table name="table" border="1">
+        <tr>
+            <th>Name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Father Name</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Class</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>English</th>
+            <td><input id="one" value="76" type="number" name="a"></td>
+        </tr>
+        <tr>
+            <th>Mathematics</th>
+            <td><input id="two" value="95" type="number" name="b"></td>
+        </tr>
+        <tr>
+            <th>Science</th>
+            <td><input id="three" value="56" type="number" name="c"></td>
+        </tr>
+        <tr>
+            <th>Physics</th>
+            <td><input id="four" value="86" type="number" name="d"></td>
+        </tr>
+        <tr>
+            <th><input onclick="col()" name="total" type="button" value="Total">
+            <td id="obtain"><input type="number"></td>
+            </th>
+        </tr>
+        <tr>
+            <th><input name="percent" onclick="col1()" type="button" value="Percentage">
+            <td id="percent"><input type="number"></td>
+            </th>
+        </tr>
+        <tr>
+            <th><input name="percent" onclick="col3()" type="button" value="Grade">
+            <td id="grade"><input type="text"></td>
+            </th>
+        </tr>
+        <tr>
+            <th><input name="percent" onclick="col2()" type="button" value="Remarks">
+            <td id="remarks"><input type="text"></td>
+            </th>
+        </tr>
+    </table>
+
+    <script>
+        function col() {
+            var w = parseInt(document.getElementById('one').value);
+            var x = parseInt(document.getElementById('two').value);
+            var y = parseInt(document.getElementById('three').value);
+            var z = parseInt(document.getElementById('four').value);
+
+            if (w > 100 || x > 100 || y > 100 || z > 100) {
+                alert("Please Enter The Correct Value");
+            }
+            else {
+                var total = w + x + y + z;
+                document.getElementById("obtain").innerHTML = total;
+
+            }
+        }
+        function col1() {
+            var w = parseInt(document.getElementById('one').value);
+            var x = parseInt(document.getElementById('two').value);
+            var y = parseInt(document.getElementById('three').value);
+            var z = parseInt(document.getElementById('four').value);
+
+            if (w > 100 || x > 100 || y > 100 || z > 100) {
+                alert("Please Enter The Correct Value");
+            }
+            else {
+                var per = (w + x + y + z) * 100 / 400 + "%";
+                document.getElementById("percent").innerHTML = per;
+
+            }
+        }
+
+
+
+
+        function col3() {
+
+            var w = parseInt(document.getElementById('one').value);
+            var x = parseInt(document.getElementById('two').value);
+            var y = parseInt(document.getElementById('three').value);
+            var z = parseInt(document.getElementById('four').value);
+
+            var per = (w + x + y + z) * 100 / 400 + "%";
+
+            if (per >= 90 + "%") {
+                document.getElementById("grade").innerHTML = "A-1";
+            } else if (per >= 80 + "%") {
+                document.getElementById("grade").innerHTML = "A";
+            } else if (per >= 70 + "%") {
+                document.getElementById("grade").innerHTML = "B";
+            } else if (per >= 60 + "%") {
+                document.getElementById("grade").innerHTML = "C";
+            } else if (per >= 50 + "%") {
+                document.getElementById("grade").innerHTML = "D";
+            } else if (per >= 40 + "%") {
+                document.getElementById("grade").innerHTML = "E";
+            } else {
+                document.getElementById("grade").innerHTML = "Fail";
+            }
+
+        }
+        function col2() {
+
+            var w = parseInt(document.getElementById('one').value);
+            var x = parseInt(document.getElementById('two').value);
+            var y = parseInt(document.getElementById('three').value);
+            var z = parseInt(document.getElementById('four').value);
+
+            var per = (w + x + y + z) * 100 / 400 + "%";
+            if (per >= 90 + "%") {
+                document.getElementById("remarks").innerHTML = "Excellent work";
+            } else if (per >= 80 + "%") {
+                document.getElementById("remarks").innerHTML = "Very Good";
+            } else if (per >= 70 + "%") {
+                document.getElementById("remarks").innerHTML = "Good";
+            } else if (per >= 60 + "%") {
+                document.getElementById("remarks").innerHTML = "Fair";
+            } else if (per >= 50 + "%") {
+                document.getElementById("remarks").innerHTML = "Poor";
+            } else if (per >= 40 + "%") {
+                document.getElementById("remarks").innerHTML = "Very Poor";
+            } else {
+                document.getElementById("remarks").innerHTML = "Disqualified";
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

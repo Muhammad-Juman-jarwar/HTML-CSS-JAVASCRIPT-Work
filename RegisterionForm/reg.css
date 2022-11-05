@@ -1,0 +1,298 @@
+body{font-family: 'Oswald', sans-serif;
+background-image: url(images/walpaper.jpg);
+position: relative;
+background-size: cover;
+
+}
+.alldivs{
+    position: relative;
+    margin: auto;
+    display: block;
+    border: rgb(0, 0, 0, 0.3) solid 4px;
+    margin: 100px 300px 500px 300px;
+    background:rgba(138, 146, 149, 0.7) ;
+    outline: rgb(255, 255, 255);
+    border-radius: 3rem;
+    height: 800px;
+    
+}
+.alldivs:hover{
+    background: black;
+}
+.st{
+    margin-top: 40px;
+}
+.reg{
+    position: relative;
+    margin-top: -35px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background: rgba(77, 81, 83, 0.9);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 80px;
+}
+.reg:hover{
+    color: red;
+    background: white;
+    text-decoration:black underline;
+}
+
+.names{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    
+}
+.names:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: white underline;
+}
+.first{
+    position: relative;
+    margin-left: 150px;
+    margin-top: 31px;
+    border: rgb(255, 255, 255) solid 4px;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+.first:hover{
+    color: red;
+    border: red solid 2px;
+}
+.firstname{
+    position: absolute;
+    margin-top: 83px;
+    margin-left: -230px;
+    font-weight: 800;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+}
+.firstname:hover{
+    color: red;
+    text-decoration: white underline;
+}
+.last{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 31px;
+    border: white solid 4px;
+    border-radius: 8px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    color: rgb(0, 0, 0);
+    
+}
+.last:hover{
+    color: red;
+    border: red solid 2px;
+}
+.lastname{
+    position: absolute;
+    margin-top: 83px;
+    margin-left: -225px;
+    font-weight: 800;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+}
+.lastname:hover{
+    color: red;
+    text-decoration: white underline;
+}
+.fathername{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    margin-top: 20px ;
+    
+}
+.fathername:hover{
+    color: red;
+    text-decoration: underline white;
+}
+.father{
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -70px;
+    border: white solid 4px;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    color: black;
+}
+.father:hover{
+    color: red;
+    border: red solid 2px;
+}
+.address{
+    position: absolute;
+    margin-top: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+.address:hover{
+    color: red;
+    text-decoration: underline white;
+}
+.addr{
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -70px;
+    border: white solid 4px;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    color: black;
+}
+.addr:hover{
+    color: red;
+    border: red solid 2px;
+}
+.cityname{
+    position: absolute;
+    margin-top: 180px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+.cityname:hover{
+    color: red;
+    text-decoration: underline white;
+}
+.cityame{
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -70px;
+    border: white solid 4px;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    color: black;
+}
+.cityame:hover{
+    color: red;
+    border: red solid 2px;
+}
+.email{
+    position: absolute;
+    margin-top: 260px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 900;
+}
+.email:hover{
+    color: red;
+    text-decoration: underline white;
+}
+.emailid{
+    position: absolute;
+    margin-left: 270px;
+    margin-top: -70px;
+    border: white solid 4px;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    color: black;
+}
+.emailid:hover{ 
+    color: red;
+    border: red solid 2px;
+}
+
+.gender{
+    position: absolute;
+    margin-top: 340px;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-left: 33%;
+    color: rgb(0, 0, 0);
+    
+}
+.gender:hover{
+    color: red;
+    
+}
+.chechbox{
+    position: relative;
+    font-size: 29px;
+    font-weight:900px ;
+    color: rgb(255, 255, 255);
+}
+.chechbox:hover{
+    color: red;
+    text-decoration: underline rgb(255, 255, 255) ;
+}
+.checkbox{
+    position: relative;
+    font-size: 29px;
+    font-weight:900px ;
+    color: rgb(255, 255, 255);
+}
+.checkbox:hover{
+    color: red;
+    text-decoration: underline rgb(255, 255, 255) ;
+}
+.checkox{
+    position: relative;
+    font-size: 29px;
+    font-weight:900px ;
+    color: rgb(255, 255, 255);
+    
+}
+.checkox:hover{
+    color: red;
+    text-decoration: underline rgb(255, 255, 255) ;
+}
+.echbox{
+    
+    cursor: pointer;
+}
+.ceckbox{
+    cursor: pointer;
+}
+.cckox{
+    cursor: pointer;
+}
+.submit{
+    position: absolute;
+    margin-top: 500px ;
+    margin-left: 300px;
+    
+}
+button{
+    color:rgb(255, 255, 255);
+    background: rgb(86, 90, 95);
+    padding: 10px 5px 10px 5px;
+    width: 160px;
+    border: solid rgb(68, 66, 66) 3px;
+    margin-left: -40px;
+    border-radius: 3em;
+    font-size: 28px;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+    text-decoration: white underline;
+}

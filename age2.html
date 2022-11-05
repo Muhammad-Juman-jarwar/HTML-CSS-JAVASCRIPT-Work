@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Counter</title>
+</head>
+<body> 
+    <h1>Age Counter</h1>
+    <label for="">Enter Your Age</label>
+<input id="age" type="text" value="10" name="aged" ><br><br>
+Months
+<input onclick="col1()" type="radio" name="one"><br>
+Weeks
+<input onclick="col2()" type="radio" name="one"><br>
+Days
+<input onclick="col3()" type="radio" name="one"><br>
+Hours
+<input onclick="col4()" type="radio" name="one"><br>
+Minutes
+<input onclick="col5()" type="radio" name="one"><br>
+<br>
+Answer
+<input readonly type="text" id="ans" >
+
+
+
+<script>
+function col1(){
+  var x = document.getElementById('age').value*12;
+  document.getElementById('ans').value = x;
+}
+function col2(){
+  var x = document.getElementById('age').value*12*4;
+  document.getElementById('ans').value = x;
+}
+function col3(){
+  var x = document.getElementById('age').value*12*4*7;
+  document.getElementById('ans').value = x;
+}
+function col4(){
+  var x = document.getElementById('age').value*12*4*7*24;
+  document.getElementById('ans').value = x;
+}
+function col5(){
+  var x = document.getElementById('age').value*12*4*7*24*60;
+  document.getElementById('ans').value = x;
+}
+</script>
+</body>
+</html>
